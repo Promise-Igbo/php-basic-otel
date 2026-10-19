@@ -1,0 +1,23 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "learning/php-voting-poll-azure-otel",
+    "type": "project",
+    "description": "A session-based PHP poll with OpenTelemetry tracing for the Azure Monitor App Service sidecar.",
+    "require": {
+        "php": "^8.2",
+        "open-telemetry/sdk": "^1.15",
+        "open-telemetry/exporter-otlp": "^1.4",
+        "php-http/guzzle7-adapter": "^1.1"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": false,
+            "tbachert/spi": false
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
